@@ -4,15 +4,7 @@ const ListaDeOpciones = (props) => {
     // Método map -> arreglo.map((equipos)=> {
         //     return <options><options/>
     // })
-    const equipos = [
-        "Programación", 
-        "Front End", 
-        "Data Science", 
-        "Devops", 
-        "UX y Diseño", 
-        "Movil", 
-        "Innovación y Gestión"
-    ]
+    
     const manejarCambio=(e)=>{
         console.log("cambio",e.target.value);
         props.actualizarEquipo(e.target.value)
@@ -26,7 +18,7 @@ const ListaDeOpciones = (props) => {
             disabled 
             defaultValue="" 
             hidden>Seleccionar equipo</option>
-        {equipos.map((equipo, index) => <option key={index} value={equipo}>{equipo}</option>)}
+        {props.equipos.map((equipo, index) => <option key={index} value={equipo}>{equipo}</option>)}
         </select>
     </div>
 }
