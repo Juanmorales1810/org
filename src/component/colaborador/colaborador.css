@@ -1,6 +1,7 @@
 .colaborador{
     width: 280px;
     margin-bottom: 24px;
+    position: relative;
 }
 .colaborador .encabezado {
     background-color: #f0f0f0;
@@ -36,4 +37,9 @@
     padding: 0 24px;
     font-weight: 400;
     margin: 0;
+}
+.delete{
+    position: absolute;
+    bottom: 300px;
+    left: 240px;
 }
